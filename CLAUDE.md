@@ -13,6 +13,8 @@
 
 - **فیلم/انیمیشن بلند با Google Flow + ComfyUI** (پیج تاریخی، برنامه‌ی کودک، ثبات کاراکتر و صحنه، شات‌لیست، پرامپت): مهارت `.claude/skills/ai-film-director/SKILL.md` را بخوان.
 
+- **Huobao Drama** (استودیوی سریال کوتاه AI: فیلم‌نامه → شات‌لیست → ویدیو با MiniMax H3/Seedance/Wan): مهارت `.claude/skills/huobao-drama/SKILL.md`. اجرا: `bash scripts/huobao-setup.sh`.
+
 ## شروع هر جلسه
 - راه‌اندازی خودکار است: hook از نوع SessionStart فایل `scripts/cloud-setup.sh` را اجرا می‌کند و گزارش `cloud-doctor` را در کانتکست می‌گذارد.
 - اگر چیزی ✗ بود، اول خودت درستش کن:
