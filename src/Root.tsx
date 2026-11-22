@@ -16,6 +16,7 @@ import { FLAP_FPS, FLAP_FRAMES, FLAP_LOOK, FlapVideo } from "./styles/split-flap
 import { LIGHTLOGO_FPS, LIGHTLOGO_FRAMES, LIGHTLOGO_LOOK, LightLogoVideo } from "./styles/light-logo";
 import { DESK_FPS, DESK_FRAMES, DESK_LOOK, DeskVideo } from "./styles/studio-desk";
 import { ArtMotionCompositions } from "./styles/art-motion";
+import { LOOKS, LOOK_FPS, LOOK_FRAMES, LOOK_PACK_FRAMES, LookPackReel, LookScene } from "./styles/look-pack";
 
 // Every video = one <Composition>. The style demos below are the reference films / starter templates (see STYLES.md).
 // They play silent: the films’ narration, music and effects are not shipped — each style’s pipeline/ folder says how to make yours.
@@ -55,6 +56,11 @@ export const RemotionRoot: React.FC = () => {
       {/* v2 · Art Motion: 36 moving-painting styles (Art-<Style>) + 9 explainer grammars (Explainer-<Style>) + Art-Story / Art-Poem / Art-Journey.
           Card: styles/art-motion.md. Your video: cp src/art-starter/StoryVideo.tsx src/v01/Video.tsx → import { V01 } from "./v01/Video"; <V01 /> */}
       <ArtMotionCompositions />
+      {/* Look Pack: Glow Sketch, Chalkboard, Minimal Line, Lego, PS2, Explainer 3D (SVG, CPU-friendly). Card: styles/look-pack.md */}
+      {LOOKS.map((l) => (
+        <Composition key={l.id} id={`Look-${l.id}`} component={LookScene} durationInFrames={LOOK_FRAMES} fps={LOOK_FPS} width={1920} height={1080} defaultProps={{ look: l.id }} />
+      ))}
+      <Composition id="Look-Pack-Reel" component={LookPackReel} durationInFrames={LOOK_PACK_FRAMES} fps={LOOK_FPS} width={1920} height={1080} />
       {/* your videos: <Composition id="V01" component={Video01} durationInFrames={…} fps={30} width={1080} height={1920} /> */}
     </>
   );

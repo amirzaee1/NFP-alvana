@@ -73,6 +73,8 @@ description: (نسخه‌ی گوشی و ابری) ساخت ویدیوی موشن
 | `photocopy-story` | افقی | داستان «مشکل، راه‌حل» با نریشن |
 | `pixel-collage` | افقی | معرفی ایده با نریشن، بدون متن روی صفحه |
 
+**Look Pack** (۶ سبک روی یک صحنه، کارت: `styles/look-pack.md`): Glow Sketch، Chalkboard، Minimal Line، Lego، PS2، Explainer 3D. افقی، دوبعدی، سریع.
+
 **نسخه‌ی ۲ · Art Motion** (۴۵ سبک، یک کارت: `styles/art-motion.md`). ارزان‌ترین مسیر کیت: ویدیو = داده، کد صحنه نوشته نمی‌شود.
 | قالب | قاب | برای |
 |---|---|---|
